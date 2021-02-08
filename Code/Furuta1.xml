@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="ivano" on="12/22/20||12:48:04" using="Simscape Multibody Link Version 6.1" from="Autodesk Inventor 2020 (Build 240168000. 168)"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="centimeter"/>
+<RootAssembly name="Furuta1.iam" uid="Furuta1.iam_{5ECF0BF7-4CF7-9304-4F09-01B8AFCA7F6F}" version="{95390456-B95C-8DDA-0279-D433FE6A968D}">
+<AssemblyFile name="Furuta1.iam" type="Inventor Assembly"/>
+<InstanceTree>
+<Instance name="Base1:1" grounded="true" uid="Base1:1" entityUid="Base1.ipt_{57305725-4FC4-8CC1-7E66-C1B631E4DCA8}">
+<Transform>
+<Rotation>0.83365301649784118 0.52436183991833385 -0.17339927601206939 -0.53242725635818922 0.84647576261041946 2.4980018054066022e-15 0.14677828439841234 0.092322500781600383 0.98485160865913723</Rotation>
+<Translation>1.7858615861803728 27.639677838957606 -14.389161001022433</Translation>
+</Transform>
+</Instance>
+<Instance name="Asta1:1" uid="Asta1:1" entityUid="Asta1.ipt_{9D21B39C-4C55-9D71-0EFE-C7AF7C14A382}">
+<Transform>
+<Rotation>-2.9021583878630079e-16 -0.98485160865913712 -0.17339927601206928 1 -7.2666847521127284e-16 2.4535556766557141e-15 -2.5423920425915669e-15 -0.17339927601206928 0.98485160865913712</Rotation>
+<Translation>-1.706512390881529 27.139677838957688 16.980463223764463</Translation>
+</Transform>
+</Instance>
+<Instance name="Pendolo1:1" uid="Pendolo1:1" entityUid="Pendolo1.ipt_{8D6269F0-4EF5-5EE4-0B25-C2A3BB6E2EF0}">
+<Transform>
+<Rotation>4.5073364748607805e-15 -0.99999999999999778 -5.6205040621647869e-16 -2.4811597076833915e-15 -2.2898349882894174e-16 0.99999999999999645 -0.99999999999999789 -3.5943470422239356e-15 -2.6090241078691139e-15</Rotation>
+<Translation>-3.762915246205957 52.889677838957752 41.87609047606977</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+</Constraints>
+<Joints>
+<Revolute name="Rotazionale:1">
+<BaseFrame>
+<InstancePath>
+<Uid>Base1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 0 0 0 0 0 0 0 -1</Rotation>
+<Translation>0 0 31.5</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Asta1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 -1 0 -1 0 0 0 0 -1</Rotation>
+<Translation>0.5 2 0</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="Rotazionale:2">
+<BaseFrame>
+<InstancePath>
+<Uid>Asta1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 0 -1 0 1 0 1 0 0</Rotation>
+<Translation>25 2 0.5</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Pendolo1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>1 0 1.2786440018572391e-16 0 -1 3.330669073875476e-16 1.2786440018572391e-16 -3.330669073875476e-16 -1</Rotation>
+<Translation>24.75 0 -0.75017824586909576</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+</Joints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Asta1.ipt" uid="Asta1.ipt_{9D21B39C-4C55-9D71-0EFE-C7AF7C14A382}" version="{2CF705A5-3A35-8036-448A-8214A4A6C9A6}">
+<PartFile name="Asta1.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.099607300918301264</Mass>
+<CenterOfMass>12.500000000000052 2 0.49999999999994843</CenterOfMass>
+<Inertia>0.1416411003213206 5.1600791380548996 5.285092432556576 0 6.1618266045115892e-14 0</Inertia>
+</MassProperties>
+<GeometryFile name="Asta1_ipt_49b97087.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Base1.ipt" uid="Base1.ipt_{57305725-4FC4-8CC1-7E66-C1B631E4DCA8}" version="{85BB9B5E-3A1C-B6B2-9822-D32C2FF31A51}">
+<PartFile name="Base1.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>1.4227998238750377</Mass>
+<CenterOfMass>7.9794362616574466e-10 0 15.749999999999998</CenterOfMass>
+<Inertia>122.80629938121 122.80629804878659 10.31707655666213 0 -7.9580786405131228e-15 1.0913936421275139e-14</Inertia>
+</MassProperties>
+<GeometryFile name="Base1_ipt_f23bb71.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Pendolo1.ipt" uid="Pendolo1.ipt_{8D6269F0-4EF5-5EE4-0B25-C2A3BB6E2EF0}" version="{85E057FA-BC35-6E37-F800-BC93EBE9B660}">
+<PartFile name="Pendolo1.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.043890845261483367</Mass>
+<CenterOfMass>12.419287386409488 2.3366126127390335e-06 -4.6066036514219297e-05</CenterOfMass>
+<Inertia>0.01236920237014945 2.263376579516819 2.2634236654157065 -4.7243332967816452e-12 1.2756741895742778e-05 -1.2463562616491808e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Pendolo1_ipt_586e5bf6.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
